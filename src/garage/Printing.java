@@ -25,7 +25,6 @@ public class Printing {
 		Vehicle v1 = new Car("Car", "Porsche", "911", "Blue", 3);
 		Vehicle v2 = new Car("Car", "Toyota", "Yaris", "Silver", 5);
 		Vehicle v3 = new Bike("Bike", "Carrera", "v92", "Blue & Gold", "Mountain");
-		;
 		Vehicle v4 = new Plane("Plane", "Boeing", "736", "White", 150);
 
 		Vehicle[] parking = { v1, v2, v3, v4 };
