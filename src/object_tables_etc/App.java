@@ -4,7 +4,7 @@ public class App {
 	public static void main(String[] args) {
 		People mike = new People();
 		mike.name = "Mike";
-		mike.age = 30;
+		mike.setAge(30);
 		mike.gender = "male";
 		mike.profession = "Mortgage Advisor";
 		mike.print();
