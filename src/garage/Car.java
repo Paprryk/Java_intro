@@ -21,4 +21,10 @@ public class Car extends Vehicle {
 		this.doors = doors;
 	}
 
+	@Override
+	public void print() {
+		super.print();
+		System.out.println("Doors: " + this.doors);
+	}
+
 }

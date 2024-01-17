@@ -3,43 +3,35 @@ package garage;
 public class Printing {
 
 	public static void main(String[] args) {
-		Vehicle v = new Vehicle();
-		v.print();
+		Vehicle test = new Vehicle();
+//		test.print();
+//		test.setType("Vehicle");
+//		test.setMake("Test");
+//		test.setModel("Z");
+//		test.setColour("White");
+//		test.print();
 
-		v.setType("Vehicle");
-		v.setMake("Test");
-		v.setModel("Z");
-		v.setColour("White");
-		v.print();
+		Car c = new Car("Car", "Ferrari", "x", "Red", 3);
+//		c.print();
 
-		Car c = new Car();
-		c.print();
+		Bike b = new Bike("Bike", "Voodoo", "B55", "Blue & White", "Mountain");
+//		b.print();
+//		b.printBike_type();
 
-		c.setType("Car");
-		c.setMake("Ferrari");
-		c.setModel("x");
-		c.setColour("Red");
-		c.setDoors(3);
-		c.print();
+		Plane p = new Plane("Plane", "Boeing", "737", "Blue & Yellow", 120);
+//		p.print();
+//		p.printSeats();
 
-		Bike b = new Bike();
-		b.print();
+		Vehicle v1 = new Car("Car", "Porsche", "911", "Blue", 3);
+		Vehicle v2 = new Car("Car", "Toyota", "Yaris", "Silver", 5);
+		Vehicle v3 = new Bike("Bike", "Carrera", "v92", "Blue & Gold", "Mountain");
+		;
+		Vehicle v4 = new Plane("Plane", "Boeing", "736", "White", 150);
 
-		b.setType("Bike");
-		b.setMake("Voodoo");
-		b.setModel("B55");
-		b.setColour("Blue & White");
-		b.setBike_type("Mountain");
-		b.print();
+		Vehicle[] parking = { v1, v2, v3, v4 };
 
-		Plane p = new Plane();
-		p.print();
-
-		p.setType("Plane");
-		p.setMake("Boeing");
-		p.setModel("737");
-		p.setColour("Blue & Yellow");
-		p.setSeats(120);
-		p.print();
+		for (Vehicle vehicle : parking) {
+			vehicle.print();
+		}
 	}
 }

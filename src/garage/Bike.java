@@ -21,4 +21,7 @@ public class Bike extends Vehicle {
 		this.bike_type = bike_type;
 	}
 
+	public void printBike_type() {
+		System.out.println("Bike type: " + this.bike_type);
+	}
 }

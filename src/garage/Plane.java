@@ -21,4 +21,7 @@ public class Plane extends Vehicle {
 		this.seats = seats;
 	}
 
+	public void printSeats() {
+		System.out.println("Seats: " + this.seats);
+	}
 }
