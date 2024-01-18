@@ -24,4 +24,20 @@ public class Plane extends Vehicle {
 	public void printSeats() {
 		System.out.println("Seats: " + this.seats);
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Plane other = (Plane) obj;
+		if (this.getSeats() != other.getSeats()) {
+			return false;
+		}
+
+		return true;
+	}
 }

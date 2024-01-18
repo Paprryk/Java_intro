@@ -1,5 +1,7 @@
 package garage;
 
+import java.util.Objects;
+
 public class Vehicle {
 	private String type;
 	private String make;
@@ -55,6 +57,24 @@ public class Vehicle {
 		System.out.println("Make: " + this.make);
 		System.out.println("Model: " + this.model);
 		System.out.println("Colour: " + this.colour);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(colour, make, model, type);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Vehicle other = (Vehicle) obj;
+		return Objects.equals(colour, other.colour) && Objects.equals(make, other.make)
+				&& Objects.equals(model, other.model) && Objects.equals(type, other.type);
 	}
 
 }

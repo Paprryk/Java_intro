@@ -24,4 +24,20 @@ public class Bike extends Vehicle {
 	public void printBike_type() {
 		System.out.println("Bike type: " + this.bike_type);
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Bike other = (Bike) obj;
+		if (this.getBike_type() != other.getBike_type()) {
+			return false;
+		}
+
+		return true;
+	}
 }

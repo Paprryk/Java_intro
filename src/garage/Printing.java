@@ -3,7 +3,7 @@ package garage;
 public class Printing {
 
 	public static void main(String[] args) {
-		Vehicle test = new Vehicle();
+//		Vehicle test = new Vehicle();
 //		test.print();
 //		test.setType("Vehicle");
 //		test.setMake("Test");
@@ -11,14 +11,14 @@ public class Printing {
 //		test.setColour("White");
 //		test.print();
 
-		Car c = new Car("Car", "Ferrari", "x", "Red", 3);
+//		Car c = new Car("Car", "Ferrari", "x", "Red", 3);
 //		c.print();
 
-		Bike b = new Bike("Bike", "Voodoo", "B55", "Blue & White", "Mountain");
+//		Bike b = new Bike("Bike", "Voodoo", "B55", "Blue & White", "Mountain");
 //		b.print();
 //		b.printBike_type();
 
-		Plane p = new Plane("Plane", "Boeing", "737", "Blue & Yellow", 120);
+//		Plane p = new Plane("Plane", "Boeing", "737", "Blue & Yellow", 120);
 //		p.print();
 //		p.printSeats();
 
@@ -32,5 +32,11 @@ public class Printing {
 		for (Vehicle vehicle : parking) {
 			vehicle.print();
 		}
+
+		Car c = new Car("Car", "Ferrari", "x", "Red", 3);
+		Car c2 = new Car("Car", "Ferrari", "x", "Red", 3);
+		System.out.println("c == c2: " + (c == c2));
+		System.out.println("c.equals(c2): " + c.equals(c2));
+
 	}
 }
