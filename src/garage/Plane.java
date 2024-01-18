@@ -40,4 +40,11 @@ public class Plane extends Vehicle {
 
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return "Plane [seats=" + seats + ", Type=" + getType() + ", Make=" + getMake() + ", Model=" + getModel()
+				+ ", Colour=" + getColour() + "]";
+	}
+
 }

@@ -43,4 +43,10 @@ public class Car extends Vehicle {
 		System.out.println("Doors: " + this.doors);
 	}
 
+	@Override
+	public String toString() {
+		return "Car [doors=" + doors + ", Type=" + getType() + ", Make=" + getMake() + ", Model=" + getModel()
+				+ ", Colour=" + getColour() + "]";
+	}
+
 }

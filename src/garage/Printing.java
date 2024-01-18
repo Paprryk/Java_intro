@@ -36,7 +36,14 @@ public class Printing {
 		Car c = new Car("Car", "Ferrari", "x", "Red", 3);
 		Car c2 = new Car("Car", "Ferrari", "x", "Red", 3);
 		System.out.println("c == c2: " + (c == c2));
+//		Uses equals method
 		System.out.println("c.equals(c2): " + c.equals(c2));
+		System.out.println(c);
 
+		Plane p = new Plane("Plane", "Boeing", "636", "Black", 200);
+		System.out.println(p);
+
+		Bike b = new Bike("Bike", "Voodoo", "Dirt55", "Gold", "OffRoad");
+		System.out.println(b);
 	}
 }

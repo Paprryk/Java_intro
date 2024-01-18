@@ -77,4 +77,9 @@ public class Vehicle {
 				&& Objects.equals(model, other.model) && Objects.equals(type, other.type);
 	}
 
+	@Override
+	public String toString() {
+		return "Vehicle [type=" + type + ", make=" + make + ", model=" + model + ", colour=" + colour + "]";
+	}
+
 }

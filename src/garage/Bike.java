@@ -40,4 +40,10 @@ public class Bike extends Vehicle {
 
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return "Bike [Bike Type=" + bike_type + ", Type=" + getType() + ", Make=" + getMake() + ", Model=" + getModel()
+				+ ", Colour=" + getColour() + "]";
+	}
 }
