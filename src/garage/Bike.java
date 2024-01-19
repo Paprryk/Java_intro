@@ -3,6 +3,7 @@ package garage;
 public class Bike extends Vehicle {
 
 	private String bike_type;
+	private int wheelSize;
 
 	public Bike(String type, String make, String model, String colour, String bike_type) {
 		super(type, make, model, colour);
@@ -21,8 +22,20 @@ public class Bike extends Vehicle {
 		this.bike_type = bike_type;
 	}
 
+	public int getWheelSize() {
+		return wheelSize;
+	}
+
+	public void setWheelSize(int wheelSize) {
+		this.wheelSize = wheelSize;
+	}
+
 	public void printBike_type() {
 		System.out.println("Bike type: " + this.bike_type);
+	}
+
+	public void printWheelSize() {
+		System.out.println("Wheel size: " + this.wheelSize);
 	}
 
 	@Override
@@ -46,4 +59,10 @@ public class Bike extends Vehicle {
 		return "Bike [Bike Type=" + bike_type + ", Type=" + getType() + ", Make=" + getMake() + ", Model=" + getModel()
 				+ ", Colour=" + getColour() + "]";
 	}
+
+	@Override
+	public double calcBill() {
+		return 10 + this.wheelSize * 10;
+	}
+
 }

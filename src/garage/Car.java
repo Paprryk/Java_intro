@@ -49,4 +49,9 @@ public class Car extends Vehicle {
 				+ ", Colour=" + getColour() + "]";
 	}
 
+	@Override
+	public double calcBill() {
+		return 10 + this.doors * 2;
+	}
+
 }

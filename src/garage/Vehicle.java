@@ -2,7 +2,7 @@ package garage;
 
 import java.util.Objects;
 
-public class Vehicle {
+public abstract class Vehicle {
 	private String type;
 	private String make;
 	private String model;
@@ -52,6 +52,8 @@ public class Vehicle {
 		this.colour = colour;
 	}
 
+	public abstract double calcBill();
+
 	public void print() {
 		System.out.println("Vehicle type: " + this.type);
 		System.out.println("Make: " + this.make);
@@ -81,5 +83,4 @@ public class Vehicle {
 	public String toString() {
 		return "Vehicle [type=" + type + ", make=" + make + ", model=" + model + ", colour=" + colour + "]";
 	}
-
 }

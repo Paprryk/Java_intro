@@ -20,11 +20,19 @@ public class BigGarage {
 		vehicles.remove(vehicle);
 	}
 
+	public double fix() {
+		double bill = 0;
+
+		for (Vehicle v : this.vehicles) {
+			bill += v.calcBill();
+		}
+		return bill * 2.5;
+	}
+
 	public void print() {
 		System.out.println("Richmans Garage");
 		for (Vehicle vehicle : vehicles) {
-			vehicle.print();
+			System.out.println(vehicle);
 		}
 	}
-
 }

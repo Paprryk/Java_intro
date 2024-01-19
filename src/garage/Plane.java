@@ -47,4 +47,9 @@ public class Plane extends Vehicle {
 				+ ", Colour=" + getColour() + "]";
 	}
 
+	@Override
+	public double calcBill() {
+		return 10 + this.seats * 5;
+	}
+
 }

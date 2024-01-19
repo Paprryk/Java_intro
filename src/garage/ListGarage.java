@@ -9,5 +9,6 @@ public class ListGarage {
 		myBigGarage.removeVehicle(1);
 
 		myBigGarage.print();
+		System.out.println("Bill: " + myBigGarage.fix());
 	}
 }
